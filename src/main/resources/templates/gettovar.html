@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Name:'+${tovar.getName()}" />
+    <p th:text="'Weight:'+${tovar.getWeight()}" />
+    <p th:text="'Shape:'+${tovar.shapeString()}" />
+    <p th:text="'Presence:'+${tovar.isPresence()}" />
+    <p th:text="'Photo:'" />
+
+    <img th:src="'../'+${tovar.getPathToImage()}" th:height="400"/>
+
+</body>
